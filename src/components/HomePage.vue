@@ -4,7 +4,7 @@
       <div class="flex flex-col">
         <div class="text-4xl md:text-6xl font-extrabold font-press-start">{{ personalData.name }}<span
             class="animate-ping">_</span></div>
-        <div class="text-4xl md:text-4xl font-bold">{{ personalData.j }}</div>
+        <div class="text-4xl md:text-4xl font-bold">{{ personalData.job }}</div>
         <div class="text-l md:text-2xl font-bold hover:text-white hover:underline"><a
             href="mailto:diana30martins30@gmail.com" target="_blank">{{ personalData.email }}</a></div>
         <div class="text-l md:text-2xl font-bold hover:text-white hover:underline"><a href="tel:+351910075059">{{
@@ -29,7 +29,7 @@
       <div class="flex flex-col text-4xl md:text-4xl font-bold">
         <div class="hover:text-purple hover:underline cursor-pointer">About Me</div>
         <div class="hover:text-purple hover:underline cursor-pointer">Portfolio</div>
-        <div class="hover:text-purple hover:underline cursor-pointer"> <a href="/diana_martins_cv.pdf" download>Curriculum</a> </div>
+        <div class="hover:text-purple hover:underline cursor-pointer"> <a href="/diana_martins_cv.pdf" download>Curriculum</a></div>
       </div>
 
     </div>
