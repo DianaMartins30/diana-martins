@@ -2,13 +2,14 @@
   <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4">
     <div class="p-16 text-green flex items-center">
       <div class="flex flex-col">
-        <div class="text-4xl md:text-6xl font-extrabold font-press-start">Diana Martins<span
+        <div class="text-4xl md:text-6xl font-extrabold font-press-start">{{ personalData.name }}<span
             class="animate-ping">_</span></div>
-        <div class="text-4xl md:text-4xl font-bold">Front-End Developer</div>
+        <div class="text-4xl md:text-4xl font-bold">{{ personalData.j }}</div>
         <div class="text-l md:text-2xl font-bold hover:text-white hover:underline"><a
-            href="mailto:diana30martins30@gmail.com" target="_blank">diana30martins30@gmail.com</a></div>
-        <div class="text-l md:text-2xl font-bold hover:text-white hover:underline"><a href="tel:+351910075059">+351 910
-            075 059</a></div>
+            href="mailto:diana30martins30@gmail.com" target="_blank">{{ personalData.email }}</a></div>
+        <div class="text-l md:text-2xl font-bold hover:text-white hover:underline"><a href="tel:+351910075059">{{
+            personalData.phone
+        }}</a></div>
         <div class="flex flex-row">
           <div class="mr-2">
             <a href="https://www.linkedin.com/in/diana30martins30/" target="_blank">
@@ -28,7 +29,7 @@
       <div class="flex flex-col text-4xl md:text-4xl font-bold">
         <div class="hover:text-purple hover:underline cursor-pointer">About Me</div>
         <div class="hover:text-purple hover:underline cursor-pointer">Portfolio</div>
-        <div class="hover:text-purple hover:underline cursor-pointer">Curriculum</div>
+        <div class="hover:text-purple hover:underline cursor-pointer"> <a href="/diana_martins_cv.pdf" download>Curriculum</a> </div>
       </div>
 
     </div>
@@ -37,6 +38,17 @@
 
 <script>
 export default {
+
+  data() {
+    return {
+      personalData: {
+        name: "Diana Martins",
+        job: "Front-End Developer",
+        email: "diana30martins30@gmail.com",
+        phone: "+351 910 075 059"
+      },
+    }
+  },
 
 }
 </script>
